@@ -70,50 +70,136 @@
   #{'--font-*'}: initial; // Do not use Tailwind's default font utilities.
   --font-brand: var(--md-ref-typeface-brand);
   --font-plain: var(--md-ref-typeface-plain);
+  --font-weight-normal: var(--md-ref-typeface-weight-regular);
+  --font-weight-medium: var(--md-ref-typeface-weight-medium);
+  --font-weight-bold: var(--md-ref-typeface-weight-bold);
   #{'--text-*'}: initial; // Do not use Tailwind's default text utilities.
   #{'--tracking-*'}: initial;
   #{'--leading-*'}: initial;
   // Use the `typescale-<name>-<size>` utility to apply typography tokens.
   --typescale-label-sm: var(--md-sys-typescale-label-sm);
   --typescale-label-sm-tracking: var(--md-sys-typescale-label-sm-tracking);
+  --typescale-label-sm-axes: var(--md-sys-typescale-label-sm-axes);
   --typescale-label-md: var(--md-sys-typescale-label-md);
   --typescale-label-md-tracking: var(--md-sys-typescale-label-md-tracking);
+  --typescale-label-md-axes: var(--md-sys-typescale-label-md-axes);
   --typescale-label-lg: var(--md-sys-typescale-label-lg);
   --typescale-label-lg-tracking: var(--md-sys-typescale-label-lg-tracking);
+  --typescale-label-lg-axes: var(--md-sys-typescale-label-lg-axes);
   --typescale-body-sm: var(--md-sys-typescale-body-sm);
   --typescale-body-sm-tracking: var(--md-sys-typescale-body-sm-tracking);
+  --typescale-body-sm-axes: var(--md-sys-typescale-body-sm-axes);
   --typescale-body-md: var(--md-sys-typescale-body-md);
   --typescale-body-md-tracking: var(--md-sys-typescale-body-md-tracking);
+  --typescale-body-md-axes: var(--md-sys-typescale-body-md-axes);
   --typescale-body-lg: var(--md-sys-typescale-body-lg);
   --typescale-body-lg-tracking: var(--md-sys-typescale-body-lg-tracking);
+  --typescale-body-lg-axes: var(--md-sys-typescale-body-lg-axes);
   --typescale-title-sm: var(--md-sys-typescale-title-sm);
   --typescale-title-sm-tracking: var(--md-sys-typescale-title-sm-tracking);
+  --typescale-title-sm-axes: var(--md-sys-typescale-title-sm-axes);
   --typescale-title-md: var(--md-sys-typescale-title-md);
   --typescale-title-md-tracking: var(--md-sys-typescale-title-md-tracking);
+  --typescale-title-md-axes: var(--md-sys-typescale-title-md-axes);
   --typescale-title-lg: var(--md-sys-typescale-title-lg);
   --typescale-title-lg-tracking: var(--md-sys-typescale-title-lg-tracking);
+  --typescale-title-lg-axes: var(--md-sys-typescale-title-lg-axes);
   --typescale-headline-sm: var(--md-sys-typescale-headline-sm);
   --typescale-headline-sm-tracking: var(
     --md-sys-typescale-headline-sm-tracking
   );
+  --typescale-headline-sm-axes: var(--md-sys-typescale-headline-sm-axes);
   --typescale-headline-md: var(--md-sys-typescale-headline-md);
   --typescale-headline-md-tracking: var(
     --md-sys-typescale-headline-md-tracking
   );
+  --typescale-headline-md-axes: var(--md-sys-typescale-headline-md-axes);
   --typescale-headline-lg: var(--md-sys-typescale-headline-lg);
   --typescale-headline-lg-tracking: var(
     --md-sys-typescale-headline-lg-tracking
   );
+  --typescale-headline-lg-axes: var(--md-sys-typescale-headline-lg-axes);
   --typescale-display-sm: var(--md-sys-typescale-display-sm);
   --typescale-display-sm-tracking: var(--md-sys-typescale-display-sm-tracking);
+  --typescale-display-sm-axes: var(--md-sys-typescale-display-sm-axes);
   --typescale-display-md: var(--md-sys-typescale-display-md);
   --typescale-display-md-tracking: var(--md-sys-typescale-display-md-tracking);
+  --typescale-display-md-axes: var(--md-sys-typescale-display-md-axes);
   --typescale-display-lg: var(--md-sys-typescale-display-lg);
   --typescale-display-lg-tracking: var(--md-sys-typescale-display-lg-tracking);
-  #{'--font-weight-*'}: initial; // Material supports a limited set of font weights.
-  --font-weight-normal: var(--md-ref-typeface-weight-regular);
-  --font-weight-medium: var(--md-ref-typeface-weight-medium);
-  --font-weight-bold: var(--md-ref-typeface-weight-bold);
+  --typescale-display-lg-axes: var(--md-sys-typescale-display-lg-axes);
+  --typescale-emphasized-label-sm: var(--md-sys-typescale-emphasized-label-sm);
+  --typescale-emphasized-label-sm-axes: var(
+    --md-sys-typescale-emphasized-label-sm-axes
+  );
+  --typescale-emphasized-label-md: var(--md-sys-typescale-emphasized-label-md);
+  --typescale-emphasized-label-md-axes: var(
+    --md-sys-typescale-emphasized-label-md-axes
+  );
+  --typescale-emphasized-label-lg: var(--md-sys-typescale-emphasized-label-lg);
+  --typescale-emphasized-label-lg-axes: var(
+    --md-sys-typescale-emphasized-label-lg-axes
+  );
+  --typescale-emphasized-body-sm: var(--md-sys-typescale-emphasized-body-sm);
+  --typescale-emphasized-body-sm-axes: var(
+    --md-sys-typescale-emphasized-body-sm-axes
+  );
+  --typescale-emphasized-body-md: var(--md-sys-typescale-emphasized-body-md);
+  --typescale-emphasized-body-md-axes: var(
+    --md-sys-typescale-emphasized-body-md-axes
+  );
+  --typescale-emphasized-body-lg: var(--md-sys-typescale-emphasized-body-lg);
+  --typescale-emphasized-body-lg-axes: var(
+    --md-sys-typescale-emphasized-body-lg-axes
+  );
+  --typescale-emphasized-title-sm: var(--md-sys-typescale-emphasized-title-sm);
+  --typescale-emphasized-title-sm-axes: var(
+    --md-sys-typescale-emphasized-title-sm-axes
+  );
+  --typescale-emphasized-title-md: var(--md-sys-typescale-emphasized-title-md);
+  --typescale-emphasized-title-md-axes: var(
+    --md-sys-typescale-emphasized-title-md-axes
+  );
+  --typescale-emphasized-title-lg: var(--md-sys-typescale-emphasized-title-lg);
+  --typescale-emphasized-title-lg-axes: var(
+    --md-sys-typescale-emphasized-title-lg-axes
+  );
+  --typescale-emphasized-headline-sm: var(
+    --md-sys-typescale-emphasized-headline-sm
+  );
+  --typescale-emphasized-headline-sm-axes: var(
+    --md-sys-typescale-emphasized-headline-sm-axes
+  );
+  --typescale-emphasized-headline-md: var(
+    --md-sys-typescale-emphasized-headline-md
+  );
+  --typescale-emphasized-headline-md-axes: var(
+    --md-sys-typescale-emphasized-headline-md-axes
+  );
+  --typescale-emphasized-headline-lg: var(
+    --md-sys-typescale-emphasized-headline-lg
+  );
+  --typescale-emphasized-headline-lg-axes: var(
+    --md-sys-typescale-emphasized-headline-lg-axes
+  );
+  --typescale-emphasized-display-sm: var(
+    --md-sys-typescale-emphasized-display-sm
+  );
+  --typescale-emphasized-display-sm-axes: var(
+    --md-sys-typescale-emphasized-display-sm-axes
+  );
+  --typescale-emphasized-display-md: var(
+    --md-sys-typescale-emphasized-display-md
+  );
+  --typescale-emphasized-display-md-axes: var(
+    --md-sys-typescale-emphasized-display-md-axes
+  );
+  --typescale-emphasized-display-lg: var(
+    --md-sys-typescale-emphasized-display-lg
+  );
+  --typescale-emphasized-display-lg-axes: var(
+    --md-sys-typescale-emphasized-display-lg-axes
+  );
 
   // Shape
   --radius-xs: var(--md-sys-shape-corner-xs);
@@ -149,4 +235,10 @@
 @utility typescale-* {
   font: #{'--value(--typescale-*)'};
   letter-spacing: #{'--value(--typescale-*-tracking)'};
+  font-variation-settings: #{'--value(--typescale-*-axes)'};
+}
+@utility typescale-emphasized-* {
+  font: #{'--value(--typescale-emphasized-*)'};
+  letter-spacing: #{'--value(--typescale-*-tracking)'};
+  font-variation-settings: #{'--value(--typescale-emphasized-*-axes)'};
 }
