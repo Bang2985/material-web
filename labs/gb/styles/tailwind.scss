@@ -242,3 +242,9 @@
   letter-spacing: #{'--value(--typescale-*-tracking)'};
   font-variation-settings: #{'--value(--typescale-emphasized-*-axes)'};
 }
+
+// Override Tailwind's default `display: list-item` utility, which clashes
+// with the `.list-item` component class.
+@utility list-item {
+  display: flex;
+}
